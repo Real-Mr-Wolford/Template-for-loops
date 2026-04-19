@@ -14,4 +14,4 @@ def test_uses_for_loop():
     assert for_loop_found, "You didn't use a for loop!"
 
 def test_variable_name_exists():
-    assert "num" in dir(foorloop), "Could not find a variable named 'num'."
+    assert "num" in dir(forloop), "Could not find a variable named 'num'."
