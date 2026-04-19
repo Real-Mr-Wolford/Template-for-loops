@@ -4,7 +4,7 @@ import pytest
 
 def test_variable_contents():
     expected = [1, 2, 3, 4, 5]
-    assert hello.num == expected, f"List was {hello.num}, expected {expected}"
+    assert forloop.num == expected, f"List was {forloop.num}, expected {expected}"
 
 def test_uses_for_loop():
     with open("forloop.py", "r") as f:
@@ -14,4 +14,4 @@ def test_uses_for_loop():
     assert for_loop_found, "You didn't use a for loop!"
 
 def test_variable_name_exists():
-    assert "num" in dir(hello), "Could not find a variable named 'num'."
+    assert "num" in dir(foorloop), "Could not find a variable named 'num'."
