@@ -7,7 +7,7 @@ def test_variable_contents():
     assert hello.num == expected, f"List was {hello.num}, expected {expected}"
 
 def test_uses_for_loop():
-    with open("hello.py", "r") as f:
+    with open("forloop.py", "r") as f:
         tree = ast.parse(f.read())
         
     for_loop_found = any(isinstance(node, ast.For) for node in ast.walk(tree))
